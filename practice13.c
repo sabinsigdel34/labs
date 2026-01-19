@@ -4,9 +4,6 @@ void main() {
     int a;
     printf("enter a number");
     scanf("%d",&a);
-    if (a>0)
-       printf("absolute value is %d",a);
-    else
-        printf("absolute value is %d",-a);
+    printf(a>=0?"it is positive":"it is negative");
     getch();
 }

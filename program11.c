@@ -1,15 +1,17 @@
 #include<stdio.h>
+#include<conio.h>
+void main() {
+    int a,b,c,d;
+    printf("enter four numbers");
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    if (a>b && a>c && a>d)
+        printf("greatest number is %d",a);
+    else if (b>a && b>c && b>d)
+        printf("greatest number is %d",b);
+    else if (c>a && c>b && c>d)
+        printf("greatest number is %d",c);
+    else
+        printf("greatest number is %d",d);
 
-int main() {
-    int sec , hour , min , r;
-    printf("Enter seconds");
-    scanf("%d", &sec);
-    r = sec % 3600;
-    sec = sec - r;
-    hour = sec / 3600;
-    sec = r % 60;
-    r = r - sec;
-    min = r / 60;
-    printf("%d hours %d minutes %d seconds", hour,min,sec);
-    return 0;
+    getch();
 }

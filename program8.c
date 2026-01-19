@@ -1,12 +1,15 @@
-#include<stdio.h>
-#include<math.h>
-int sqr(int a) {
-   return pow(a,2);
-}
-int main() {
-   int a;
-
-   printf("Enter a number to me square");
-   scanf("%d", &a);
-   printf("Square of %d is %d", a, sqr(a));
+#include <stdio.h>
+#include <conio.h>
+void main () {
+    int n;
+    int remainder;
+    int sum = 0;
+    printf("Enter a number");
+    scanf("%d",&n);
+    while (n != 0) {
+        remainder = n%10;
+        sum = sum + remainder;
+        n = n/10;
+    }
+    printf("%d",sum);
 }

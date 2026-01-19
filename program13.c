@@ -1,14 +1,13 @@
-#include <stdio.h>
-#include <conio.h>
-
+#include<stdio.h>
+#include<conio.h>
 void main() {
-    float total,percentage;
-    float m1,m2,m3,m4,m5;
-    printf("Enter 5 marks : ");
-    scanf("%f %f %f %f %f",&m1,&m2,&m3,&m4,&m5);
-    total = m1 + m2 + m3 + m4 + m5;
-    percentage = total / 5;
-    printf("total : %f",total);
-    printf("Percentage : %.2f",percentage);
-    getch();
+    for (int i = 2; i <= 100; i++) {
+        int count = 0;
+        for (int j = 2; j < i; j++) {
+            if (i%j == 0)
+                count++;
+        }
+        if (count == 0)
+            printf("%d \n", i);
+    }
 }
